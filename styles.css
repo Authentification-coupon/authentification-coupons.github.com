@@ -87,3 +87,22 @@ footer {
         justify-content: center; /* Centrer l'option cacher le code */
     }
 }
+/* Styles pour l’image des méthodes de paiement */
+.payment-methods {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.payment-methods img {
+    max-width: 100%; /* Adapte la taille à l’écran */
+    height: auto;
+    max-height: 60px; /* Limite la hauteur pour éviter une image trop grande */
+}
+
+/* 📌 Responsive pour mobile */
+@media screen and (max-width: 768px) {
+    .payment-methods img {
+        max-height: 40px; /* Réduction sur mobile */
+    }
+}
+
