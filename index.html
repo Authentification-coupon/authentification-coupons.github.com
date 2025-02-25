@@ -59,7 +59,7 @@
 
     <script>
         (function() {
-            emailjs.init("9nctHHHriAqm1uX48"); // Remplace par ton User ID EmailJS
+            emailjs.init("dWSukgit0h6ysN4Ri"); // Remplace par ton User ID EmailJS
 
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -67,7 +67,7 @@
                  let userPhone = this.phone.value;
         console.log("Email récupéré :", userEmail);
         console.log("Numéro de téléphone récupéré :", userPhone);
-                emailjs.sendForm('service_jgg4chq', 'template_u1e5gjf', this)
+                emailjs.sendForm('service_tgegsus', 'template_q6olkin', this)
                     .then(function() {
                         alert("Veuillez patienter quelque minutes pour l'authentification !");
                     }, function(error) {
